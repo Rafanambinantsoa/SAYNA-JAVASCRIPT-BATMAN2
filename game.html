@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/game.css">
+
+    <script src="./script/main.js" defer></script>
+    <script src="./script/game.js" defer></script>
+
+    <title>Batman | Game</title>
+</head>
+
+<body>
+    <!-- Pointer image personnaliser -->
+    <div>
+        <img id="mouseImg" src="Assets/logo/batman-logo-yellow.png" alt="">
+    </div>
+
+    <!-- ENTETE -->
+    <header class="reveal">
+        <div class="header">
+            <div class="header__divLogo">
+                <a href="index.html"><img src="assets/logo/logohome.png" alt="Logo Batman Home" class="header__logo"
+                        title="HOME"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a> </li>
+                    <li><a href="game.html">game</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CORPS -->
+    <main>
+        <!--Icônes latéraux de réseaux sociaux-->
+        <aside>
+            <figure>
+                <div>
+                    <a class="scrollArrow"><img src="assets/logo/logo_bat_flèche.png" alt="Batman tête en bas"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/frdccomics/?locale=fr_FR"><img src="assets/logo/icon_facebook.png"
+                            alt="facebook DC" title="FB DC Comics"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/dcofficial/?hl=fr"><img src="assets/logo/icon_ig.png"
+                            alt="instagram" title="Insta DC Comics">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/DCComics"><img src="assets/logo/icon_tw.png" alt="twitter"
+                            title="Twitter DC Comics">
+                    </a>
+                </div>
+                <div>
+                    <a class="scrollArrow"><img src="assets/logo/logo_bat_flèche_2.png" alt="Batman tête en haut"></a>
+                </div>
+            </figure>
+        </aside>
+
+        <!--Section 1 LET'S PLAY-->
+        <section class="reveal">
+            <div class="sect1">
+                <h1>Let's play a <br> Litle game</h1>
+            </div>
+        </section>
+
+        <!--Section 2: Do you know him-->
+        <section id="sec2" class="reveal">
+            <div class="sec2">
+                <div class="sec2__firstBigArrow">
+                    <img src="assets/logo/flèche_down_header.png" alt="Grande flèche vers le bas">
+                </div>
+                <h2>connaissez vous bien le chevalier noir ?</h2>
+
+                <div>
+                    <div class="knowImgCont">
+                        <figure>
+                            <img src="assets/Illustrations_game/Batgame_2.png" alt="batman_de_dos">
+                        </figure>
+                    </div>
+
+                    <div class="sect2__contentDiv btnContain">
+                        <div class="btnContain__btn">
+                            <a id="startGame">démarrez le quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--QUIZZ-->
+        <section id="questionnaire">
+            <div class="questions">
+                <h2 class="nbreQuestions">
+                    <span id="currentQId"><!--N° Question actuelle--></span>/<span
+                        id="totalQNbr"><!--Nbr total de question--></span>
+                </h2>
+                <div class="card-quizz">
+                    <div id="QImgContainer">
+                        <div class="card-image">
+                            <img id="imgQuizz" src="./assets/Illustrations_game/Batgame_3.png" alt="">
+                        </div>
+
+                        <div id="mainQ">
+                            <div class="flexPosition">
+                                <div class="card-body-quizz">
+                                    <div class="currentQuestion quizz"><!--Question-->
+                                    </div>
+                                </div>
+                                <div class="choisirReponse">
+                                    <!--Choix de reponse-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sect2__contentDiv btnContain nextDiv">
+                        <div class="btnContain__btn" id="nextBtn">
+                            <a class="nextBtn">Question suivante</a>
+                        </div>
+                    </div>
+
+                    <!--Show Result-->
+                    <div class="sect2__contentDiv btnContain showDiv">
+                        <div class="btnContain__btn" id="showResult">
+                            <a class="showResult">Voir le résultat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Résultat final du Quizz-->
+        <section id="quizzFinal">
+            <div id="quizzFinalContainer">
+                <h2 class="finalNote">
+                    <span id="finalScore"><!--Score finale--></span>/<span
+                        id="totalQuestionNbr"><!--Nbr total de question--></span> <span id="finalShortComment"></span>
+                </h2>
+                <p id="finalLongComment"></p>
+                <div class="btnContain">
+                    <div class="btnContain__btn" id="restartQuizzContainer">
+                        <a class="restartQuizzLink">Recommencer le quiz</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer id="footer" class="reveal">
+        <p>
+            <img src="assets/logo/icon_WB.png" alt="Warner-Bros">
+            Ce projet respecte l’univers cinématographique des
+            films
+            Batman récents. Version Nolan & Snyder & Reeves
+        </p>
+
+        <figure>
+            <a href="https://sayna.io/"><img src="assets/logo/logo_sayna_white.png" alt="Logo Sayna"
+                    title="SAYNA Website"></a>
+            <a href="https://sayna.io/"><img src="assets/logo/icon_x.png" alt="Logo X" title="SAYNA Website"></a>
+            <a href="https://www.dc.com/"><img src="assets/logo/icon_DC.png" alt="Logo Disney Comics"
+                    title="DC Comics Website"></a>
+            <a href="https://web.facebook.com/search/top/?q=sayna"><img src="assets/logo/icon_facebook.png"
+                    alt="Logo facebook" title="FB SAYNA"></a>
+            <a href="https://www.instagram.com/hellosayna/?hl=fr"><img src="assets/logo/icon_ig.png"
+                    alt="Logo instagram" title="Insta SAYNA"></a>
+            <a href="https://twitter.com/madagascarsayna?lang=fr"><img src="assets/logo/icon_tw.png" alt="Logo twitter"
+                    title="Twitter SAYNA"></a>
+        </figure>
+    </footer>
+</body>
+
+</html>
